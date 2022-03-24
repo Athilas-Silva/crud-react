@@ -69,6 +69,6 @@ Excluindo:
 
 Material disponivel no youtube pelo canal [Victor Cunha Code](https://www.youtube.com/c/VitorCunhaCode/videos).
 
-- [Video 1](https://www.youtube.com/watch?v=vzPsUWLprAw)
+- [Video 1](https://www.youtube.com/watch?v=e0He6sCiQT8&t=912s)
 - [Video 2](https://www.youtube.com/watch?v=5_9rvyT9cg4)
-- [Video 3](https://www.youtube.com/watch?v=e0He6sCiQT8&t=912s)
+- [Video 3](https://www.youtube.com/watch?v=vzPsUWLprAw)
