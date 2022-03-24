@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Crud em React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+    <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+    <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+    <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+    <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
+    <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" />
+    <img src="https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white" />
+    <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white" />
+    <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" />
+</div>
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+Crud utilizando React e Nodejs. Cadastro simples de uma lista de jogos em que o usuário pode montar uma lista de desejos ou uma lista para vender seus jogos.
 
-### `npm start`
+Tela Inicial:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![home](https://user-images.githubusercontent.com/71888055/159958127-6dc14beb-a3dd-4df6-8b39-0117cb8397a9.gif)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+Cadastrando um jogo:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![cadastrar](https://user-images.githubusercontent.com/71888055/159958323-c24680cf-2864-4234-9756-01318fb2c1ef.gif)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Editando:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![edit](https://user-images.githubusercontent.com/71888055/159958250-be360c90-4d6a-4174-9e44-c865d5cc8c00.gif)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Excluindo:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![excluir](https://user-images.githubusercontent.com/71888055/159958465-c2925552-9e3c-4b34-918f-dc7e35b64fde.gif)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Ferramentas utilizadas 👨‍💻
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [Vs Code](https://code.visualstudio.com/)
+- Html
+- CSS
+- Js
+- [React](https://pt-br.reactjs.org/)
+- [NodeJs](https://nodejs.org/en/)
+    - [Express](https://expressjs.com/pt-br/)
+    - [Cors](https://expressjs.com/en/resources/middleware/cors.html)
+    - [Material-UI](https://mui.com/pt/)
+    - [Axios](https://axios-http.com/ptbr/docs/intro)
+    - [Mysql](https://www.mysql.com/)
+    - [Nodemon](https://www.npmjs.com/package/nodemon)
 
-## Learn More
+##
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Modo de uso: 🤔🧐
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Ao baixar o repositório digite o seguinte comando para instalar as dependências do projeto: `` yarn `` ou `` npm install``. Após a instalação basta digitar o comando `` yarn start `` ou ``npm start `` e espere abrir no seu navegador.
 
-### Code Splitting
+- Crie um banco de dados com o nome *crudgames* e depois uma tabela com o nome de *games* com os campos *id*, *name*, *cost*, *category* e *situation*. Exemplo abaixo:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ![Comando](https://user-images.githubusercontent.com/71888055/159966863-bceb2719-feb4-47b9-8b81-1605d49cd674.PNG)
 
-### Analyzing the Bundle Size
+- Abra outro terminal e digite o comando `` cd server `` para entrar na pasta server e depois digite o comando `` node index.js `` para o servidor funcionar e poder cadastrar seus jogos.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Créditos da Aplicação: 🤝👨‍💻
 
-### Making a Progressive Web App
+Material disponivel no youtube pelo canal [Victor Cunha Code](https://www.youtube.com/c/VitorCunhaCode/videos).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Video 1](https://www.youtube.com/watch?v=vzPsUWLprAw)
+- [Video 2](https://www.youtube.com/watch?v=5_9rvyT9cg4)
+- [Video 3](https://www.youtube.com/watch?v=e0He6sCiQT8&t=912s)

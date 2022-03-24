@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container .title-container{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.register{
+    height: 34rem;
+    width: 30rem;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    margin-top: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.register h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: monospace;
+    color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.register-input{
+    display: block;
+    height: 4rem;
+    width: 20rem;
+    margin: 1rem auto;
+    padding-left: .8rem;
+    font-size: 1.6rem;
+    border-radius: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.register button{
+    position: relative;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    overflow: hidden; /* Escondendo a cor transbordar */
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0004); /* Efeito de reflexo */
+    margin: 1.5rem auto;
+    cursor: pointer;
+}
+
+.register button:hover{
+    background-color: #2BF912;
+    box-shadow: 0 0 1rem #2BF912, 0 0 3rem #2BF912, 0 0 6rem #2BF912, 0 0 10rem #2BF912;
+}
+
+.register button::before{
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 400%;
+    background-color: #2BF912;
+    transition: 1s;
+    animation: animate 2s linear infinite;
+    animation-delay:calc(0.33s * 1);
+}
+
+.register button:hover::before{
+    width: 120%;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.register button::after{
+    content: "";
+    position: absolute;
+    inset: 4px;
+    transition: .5s;
+    background-color: #0e1538;
+}
+
+.register button:hover::after{
+    background-color: #2BF912;
+}
+
+/* Texto do botão */
+.register button span{
+    z-index: 1;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0.5;
+    transition: .5s;
+}
+
+.register button:hover span{
+    opacity: 1;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    padding: 0 1rem;
 }

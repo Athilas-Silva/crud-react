@@ -1,0 +1,64 @@
+.card-container{
+    text-align: center;
+    position: relative;
+	z-index: 0;
+	height: 15rem;
+	width: 25rem;
+	border-radius: 1rem;
+	overflow: hidden;
+	padding: 1rem;
+    cursor: pointer;
+    /* margin: 1rem auto; */
+    margin-top: 1.5rem;
+}
+
+/* Borda animada */
+.card-container::before{
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #2BF912;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#2BF912, #2BF912), linear-gradient(#FAFA02, #FAFA02), linear-gradient(#FA0202, #FA0202), linear-gradient(#0206FA, #0206FA);
+    animation: rotate 4s linear infinite;
+}
+
+.card-container::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: #0e1536;
+    border-radius: 5px;
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+.title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+    margin: 1rem auto;
+}
